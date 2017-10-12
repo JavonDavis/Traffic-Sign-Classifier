@@ -77,13 +77,13 @@ def augment(features, labels, number_of_new_images):
         features = np.concatenate((features, np.expand_dims(augmented_image, axis=0)))
         labels = np.append(labels, label)
         augmented_images_labels.append(label)
-        current_percentage = count * 100 / float(number_of_new_images)
+        current_percentage = int(count * 100 / float(number_of_new_images))
         if current_percentage > previous_percentage and current_percentage != 100:
             previous_percentage = current_percentage
-            print('{0:.0f}%->'.format(current_percentage), end='')
+            print('{}%'.format(current_percentage))
     assert (len(features) == original_length + number_of_new_images)
-
-    print("\nAdded {} new images".format(number_of_new_images))
+    print('100%')
+    print("Added {} new images".format(number_of_new_images))
     return features, labels
 
 if __name__ == '__main__':
@@ -92,7 +92,7 @@ if __name__ == '__main__':
 
     X_train, y_train = train['features'], train['labels']
 
-    X_train, y_train = augment(X_train, y_train, 2)
+    X_train, y_train = augment(X_train, y_train, 10000)
     augmented_data = {'features': X_train, 'labels':y_train}
     with open('train_augmented.p', mode='wb') as f:
         pickle.dump(augmented_data, f)
