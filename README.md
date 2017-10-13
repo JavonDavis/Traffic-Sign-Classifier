@@ -6,7 +6,6 @@ In this project, I created a convolutional neural network to classify traffic si
 
 ### Dataset Summary & Exploration
 
-I used the OpenCV library to visualize a sample image from the training dataset. Then performed an analysis of the datasets using numpy and python and found out the following:
-
+A random image from the training dataset was chosen and plotted to have an idea of what the images look like. Then performed an exploration of the datasets using numpy and python and found out the following:
 
 
