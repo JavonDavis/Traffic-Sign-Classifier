@@ -57,12 +57,14 @@ This architecture is a variation of the LeNet Architecture that was updated from
 
 ### Model Training 
 The model was trained with a learning rate of 0.001 over 20 EPOCHS and a batch size of 128. The Adam algorithm was then used to minimize the loss in the data passed to the network compared to the ground truth labels.
+
 My final model results was an accurracy of about 96% on the validation set.
 
 ![Accuracy on the validation set](/readme_images/accuracy_validation.png?raw=true "Accuracy on the Validation Set after 20 EPOCHS")
 
 And about 93% accuracy on the test set
-![Accuracy on the test set](/readme_images/accuracy_test.png?raw=true "Accuracy on the Validation Set after 20 EPOCHS")
+
+![Accuracy on the test set](/readme_images/accuracy_test.png?raw=true "Accuracy on the Test Set")
 
 ### Test Model on new images
 Here are five German traffic signs that I found on the web:
@@ -86,14 +88,14 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 ### Softmax probabilities for images
 
-![Softmax 1](/samples/softmax_1.png?raw=true )
+![Softmax 1](/readme_images/softmax_1.png?raw=true )
 
-![Softmax 2](/samples/softmax_2.png?raw=true )
+![Softmax 2](/readme_images/softmax_2.png?raw=true )
 
-![Softmax 3](/samples/softmax_3.png?raw=true )
+![Softmax 3](/readme_images/softmax_3.png?raw=true )
 
-![Softmax 4](/samples/softmax_4.png?raw=true )
+![Softmax 4](/readme_images/softmax_4.png?raw=true )
 
-![Softmax 5](/samples/softmax_5.png?raw=true )
+![Softmax 5](/readme_images/softmax_5.png?raw=true )
 
 I found it interesting that for the 4th image(i=3) None of the top 5 softmax probabilities was correct. I'm unsure what this means about the quality of my architecture and the steps I took.
