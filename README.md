@@ -57,12 +57,14 @@ This architecture is a variation of the LeNet Architecture that was updated from
 
 ### Model Training 
 The model was trained with a learning rate of 0.001 over 20 EPOCHS and a batch size of 128. The Adam algorithm was then used to minimize the loss in the data passed to the network compared to the ground truth labels.
+
 My final model results was an accurracy of about 96% on the validation set.
 
 ![Accuracy on the validation set](/readme_images/accuracy_validation.png?raw=true "Accuracy on the Validation Set after 20 EPOCHS")
 
 And about 93% accuracy on the test set
-![Accuracy on the test set](/readme_images/accuracy_test.png?raw=true "Accuracy on the Validation Set after 20 EPOCHS")
+
+![Accuracy on the test set](/readme_images/accuracy_test.png?raw=true "Accuracy on the Test Set")
 
 ### Test Model on new images
 Here are five German traffic signs that I found on the web:
