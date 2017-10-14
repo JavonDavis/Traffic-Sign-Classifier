@@ -60,3 +60,40 @@ The model was trained with a learning rate of 0.001 over 20 EPOCHS and a batch s
 My final model results was an accurracy of about 96% on the validation set.
 
 ![Accuracy on the validation set](/readme_images/accuracy_validation.png?raw=true "Accuracy on the Validation Set after 20 EPOCHS")
+
+And about 93% accuracy on the test set
+![Accuracy on the test set](/readme_images/accuracy_test.png?raw=true "Accuracy on the Validation Set after 20 EPOCHS")
+
+### Test Model on new images
+Here are five German traffic signs that I found on the web:
+
+![Image 1](/samples/sample_18.png?raw=true ) ![Image 2](/samples/sample_24.png) ![Image 3](/samples/sample_30.png)
+![Image 4](/samples/sample_33.png) ![Image](/samples/sample_34.png)
+
+
+Here are the results of the prediction:
+
+| Image			        |     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| General Caution     		| General Caution 									| 
+| Road Narrows on Right    			| Road Narrows on right										|
+| Beware of ice/snow					| Beware of ice/snow									|
+| Turn right ahead	      		| Speed Limit(60km/h)				 				|
+| Turn left ahead  		| Turn left ahead    							|
+
+
+The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This is compares somewhat equivalently to the 93% achieved on the test set.
+
+### Softmax probabilities for images
+
+![Softmax 1](/samples/softmax_1.png?raw=true )
+
+![Softmax 2](/samples/softmax_2.png?raw=true )
+
+![Softmax 3](/samples/softmax_3.png?raw=true )
+
+![Softmax 4](/samples/softmax_4.png?raw=true )
+
+![Softmax 5](/samples/softmax_5.png?raw=true )
+
+I found it interesting that for the 4th image(i=3) None of the top 5 softmax probabilities was correct. I'm unsure what this means about the quality of my architecture and the steps I took.
