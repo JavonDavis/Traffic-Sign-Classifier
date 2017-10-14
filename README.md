@@ -86,14 +86,14 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 ### Softmax probabilities for images
 
-![Softmax 1](/samples/softmax_1.png?raw=true )
+![Softmax 1](/readme_images/softmax_1.png?raw=true )
 
-![Softmax 2](/samples/softmax_2.png?raw=true )
+![Softmax 2](/readme_images/softmax_2.png?raw=true )
 
-![Softmax 3](/samples/softmax_3.png?raw=true )
+![Softmax 3](/readme_images/softmax_3.png?raw=true )
 
-![Softmax 4](/samples/softmax_4.png?raw=true )
+![Softmax 4](/readme_images/softmax_4.png?raw=true )
 
-![Softmax 5](/samples/softmax_5.png?raw=true )
+![Softmax 5](/readme_images/softmax_5.png?raw=true )
 
 I found it interesting that for the 4th image(i=3) None of the top 5 softmax probabilities was correct. I'm unsure what this means about the quality of my architecture and the steps I took.
